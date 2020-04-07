@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+
+  app1:
+    build:
+      context: app1
+      dockerfile: Dockerfile
+    image: app1
+    ports:
+      - "1001:80"
+    container_name: app1
