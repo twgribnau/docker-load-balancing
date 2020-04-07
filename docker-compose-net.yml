@@ -22,10 +22,8 @@ services:
 
   loadbalancer:
       build: load-balancer
-      tty: true
       links:
           - app1
           - app2
       ports:
           - '3000:8080'
-
